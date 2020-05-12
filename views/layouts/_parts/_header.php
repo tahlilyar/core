@@ -23,8 +23,8 @@ use app\widgets\MessageWidget;
 ?>
 <header class="main-header">
     <a href="<?= Yii::$app->homeUrl ?>" class="logo">
-        <span class="logo-mini"><b>c</b>B</span>
-        <span class="logo-lg"><b>c</b>Backup</span>
+        <span class="logo-mini"><b>پاس</b></span>
+        <span class="logo-lg" style="font-size: small;"><b>پشتیبان گیری </b>امن سخت افزار</span>
     </a>
     <nav class="navbar navbar-static-top">
 
@@ -35,7 +35,7 @@ use app\widgets\MessageWidget;
             <span class="icon-bar"></span>
         </a>
 
-        <ul class="nav navbar-nav pull-right">
+        <ul class="nav navbar-nav pull-left">
             <li class="dropdown notifications-menu">
                 <?php
                     echo Html::a('<i class="fa fa-hdd-o"></i>', 'javascript:void(0);', [
@@ -58,7 +58,7 @@ use app\widgets\MessageWidget;
                         ?>
                     </li>
                     <li id="loader">
-                        <div style="margin-left: 15%; padding:2.1em 0 2.1em 0">
+                        <div style="margin-right: 15%; padding:2.1em 0 2.1em 0">
                             <?= Html::img('@web/img/modal_loading.gif', ['alt' => Yii::t('app', 'Loading...')]) ?>
                         </div>
                     </li>

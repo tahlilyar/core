@@ -69,7 +69,8 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('user', 'Profile settings')]
                                     <?php
                                         echo Html::dropDownList('Setting[language]', $data['language'], [
                                             'en-US' => 'English',
-                                            'ru-RU' => 'Русский'
+                                            'ru-RU' => 'Русский',
+                                            'fa-IR' => 'فارسی'
                                         ], [
                                             'class' => 'form-control',
                                         ])

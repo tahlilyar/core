@@ -28,7 +28,7 @@ $this->beginPage();
 ?>
 <!DOCTYPE html>
 <!--suppress HtmlUnknownTarget -->
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= Yii::$app->language ?>" dir="<?= Yii::$app->language==='fa-IR'?'rtl':'ltr' ?>">
 
 <head>
 
@@ -50,12 +50,13 @@ $this->beginPage();
     <meta name="application-name" content="cBackup">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="<?= Yii::getAlias('@web') ?>/fonts/Iransans/main.css">
+
 </head>
 <?php $class = (\app\models\Setting::get('sidebar_collapsed') == 1) ? 'sidebar-collapse' : ''; ?>
 <body class="hold-transition skin-blue sidebar-mini <?= $class ?>">
 <?php $this->beginBody() ?>
 <div class="wrapper">
-
     <?= $this->render('_parts/_header') ?>
     <?= $this->render('_parts/_sidebar') ?>
 
